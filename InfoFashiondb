@@ -1,0 +1,30 @@
+victoria@linux-mint:~/SqliteDBFile$ sqlite3 fashion_db.sqlite
+SQLite version 3.37.2 2022-01-06 13:25:41
+Enter ".help" for usage hints.
+sqlite> .tables
+fashion_products
+sqlite> .schema fashion_products
+CREATE TABLE fashion_products (
+    user_id INTEGER,
+    product_id INTEGER,
+    product_name TEXT,
+    brand TEXT,
+    category TEXT,
+    price REAL,
+    color TEXT,
+    size TEXT
+);
+sqlite> SELECT * FROM fashion_products;
+19|1|Dress|Adidas|Men's Fashion|40.0|Black|XL
+97|2|Shoes|H&M|Women's Fashion|82.0|Black|L
+25|3|Dress|Adidas|Women's Fashion|44.0|Yellow|XL
+57|4|Shoes|Zara|Men's Fashion|23.0|White|S
+79|5|T-shirt|Adidas|Men's Fashion|79.0|Black|M
+98|6|Dress|Adidas|Men's Fashion|47.0|Yellow|L
+16|7|Jeans|Gucci|Men's Fashion|37.0|White|XL
+63|8|Sweater|Zara|Kids' Fashion|64.0|Blue|XL
+96|9|Sweater|H&M|Men's Fashion|53.0|Green|XL
+36|10|T-shirt|Zara|Kids' Fashion|55.0|White|XL
+sqlite> 
+
+
